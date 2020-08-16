@@ -1,0 +1,96 @@
+$color-electric: #2a4e55;
+$color-green: #a8ddb8;
+
+%text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: justify;
+}
+
+%image {
+    max-width: 100%;
+    width: auto; 
+    height: auto;
+}
+
+.main_content {
+    padding: 30px 50px 30px 50px;
+
+    .intro {
+        @extend %text;
+        font-size: 20px;
+    }
+
+    .image_right {
+        @extend %image;
+        padding: 80px 0px 0px 30px;
+        float: right;
+    }
+
+    .mask_types {
+        @extend %image;
+    }
+}
+
+.title {
+    @extend %text;
+    color: $color-electric;
+    font-size: 40px;
+}
+
+h3 {
+    @extend %text;
+    color: $color-electric;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.inner_paragraph {
+    @extend %text;
+    font-size: 16px;
+}
+
+#important {
+    @extend %text;
+
+    span {
+        background-color: $color-green;
+        padding: 5px;
+    }
+}
+
+.alert_message {
+    padding-left: 30px;
+    margin: 0px;
+
+    a:hover {
+        color: green;
+      }
+}
+
+.card-body img {
+    max-width: 800px;
+    height: auto;
+}
+
+.col_title {
+    background-color: $color-green;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container {
+    @extend %text;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.text {
+    @extend %text;
+}
+
+@media only screen and (max-width: 1400px) {
+    .disappear {
+      display: none;
+    }
+  }
